@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Подбор программы</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/script.js" defer="defer"></script>
+  <link rel="icon" href="favicons/210.png" type="image/png"> <!--210x210-->
+</head>
+
+<body>
+
+  <!-- ХЕДЕР -->
+
+  <header class="page-header">
+    <nav class="page-navigation container">
+      <h2 class="visually-hidden">Навигация сайта</h2>
+      <div class="page-nav-interact">
+        <a href="index.html" class="main-logo-link">
+          <picture>
+            <source width="202" height="59" type="image/svg+xml" media="(min-width: 1300px)" srcset="images/logo.svg">
+            <source width="173" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+            <img width="38" height="38" class="main-logo" src="images/logo-mobile.svg" alt="Логотип Cat Energy">
+          </picture>
+        </a>
+        <a href="index.html" class="short-logo-link-header">
+          <picture></picture>
+            <source width="202" height="59" type="image/svg+xml" media="(min-width: 1300px)" srcset="images/logo.svg">
+            <source width="173" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+            <img width="101" height="38" class="short-logo-header" src="images/logo-text.svg" alt="Логотип Cat Energy текстом">
+          
+        </a>
+        <button class="nav-menu-button" type="button" id="navMenuBtn">
+          <span class="visually-hidden">вызвать меню навигации</span>
+        </button>
+      </div>
+      <ul class="navigation-menu visually-hidden" id="navMenu"> <!-- -->
+        <li class="navigation-item">
+          <a href="index.html" class="navigation-link">
+            Главная
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a href="catalog.html" class="navigation-link">
+            Каталог продукции
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a href="form.html" class="navigation-link">
+            Подбор программы
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ФОРМА -->
+    <form class="page-form container" action="echo.htmlacademy.ru" method="post">
+
+      <h1 class="form-page-title">Подбор программы</h1>
+      <p class="form-description">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
+
+      <section class="cat-controls">
+        <div class="cat-controls-inputs">
+          <label class="cat-controls-label" for="controls-name">Имя</label>
+          <input class="controls-input" type="text" id="controls-name" name="name" placeholder="Барсик" required>
+        </div>
+        <div class="cat-controls-inputs">
+          <label class="cat-controls-label" for="controls-weight">Вес (кг)</label>
+          <input class="controls-input" type="number" id="controls-weight" name="weight" placeholder="10" required>
+        </div>
+        <div class="cat-controls-inputs">
+          <label class="cat-controls-label" for="controls-old">Возраст (лет)</label>
+          <input class="controls-input" type="number" id="controls-old" name="old" placeholder="5" required>
+        </div>
+      </section>
+
+      <section class="cat-program">
+        <div class="classname">
+          <input class="cat-program-input" type="radio" id="weight-loss" name="weight-loss">
+          <label class="cat-program-label" for="weight-loss">Похудение</label>
+        </div>
+        <div class="classname">
+          <input class="cat-program-input" type="radio" id="weight-gain" name="weight-gain">
+          <label class="cat-program-label" for="weight-gain">Набор массы</label>
+        </div>
+        <div class="classname">
+          <input class="cat-program-input" type="radio" id="advice" name="advice">
+          <label class="cat-program-label" for="advice">Не знаю (Нужен ваш совет)</label>
+        </div>
+      </section>
+
+
+      <section class="owner-contacts">
+        <h2 class="form-contacts-title">Контактные данные<br>(владельца кота)</h2>
+        <div class="classname2">
+          <label class="cat-contacts-label" for="owner-email">E-mail</label>
+          <input class="cat-contacts-input" id="owner-email" type="email" name="email" placeholder="bogdanovich@gmail.com">
+        </div>
+        <div class="classname2">
+          <label class="cat-contacts-label" for="owner-phone">Телефон</label>
+          <input class="cat-contacts-input" id="owner-phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+        </div>
+      </section>
+
+
+
+      <section class="owner-comment container">
+        <h2 class="owner-comment-title">Комментарий</h2>
+        <textarea class="textarea-owner-comment" name="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+      </section>
+
+      <section class="extras">
+        <h2 class="extras-title">Дополнительно</h2>
+        <div class="classname3">
+
+          <div class="classname4">
+            <input class="extras-input" type="checkbox" id="sweetener" name="sweetener">
+            <label class="extras-label" for="sweetener">Cахарозаменитель</label>
+          </div>
+
+          <div class="classname4">
+            <input class="extras-input" type="checkbox" id="water" name="water" checked="">
+            <label class="extras-label" for="water">Питьевая вода</label>
+          </div>
+          
+          <div class="classname4">
+            <input class="extras-input" type="checkbox" id="milk" name="milk">
+            <label class="extras-label" for="milk">Молоко</label>
+          </div>
+
+          <div class="classname4">
+            <input class="extras-input" type="checkbox" id="vitamins" name="vitamins">
+            <label class="extras-label" for="vitamins">Витамины</label>
+          </div>
+
+        </div>
+      </section>
+
+      <button class="button form-button" type="submit">Отправить заявку</button>
+    </form>
+
+  </main>
+
+  <!--ФУТЕР-->
+
+  <section class="contacts container">
+    <div class="contacts-wrapper">
+      <p class="contacts-invite">Приглашаем<br>к сотрудничеству дилеров!</p>
+      <address class="contacts-wrapper-right">
+        <p class="contacts-address">ул. Большая Конюшенная, д. 19/8
+          Санкт-Петербург</p>
+        
+    </address></div>
+  </section>
+
+  <section class="contacts_map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257261062!2d30.320467112697802!3d59.93871916198923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1727441977366!5m2!1sru!2sru" width="100%" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </section>
+
+  <footer class="page-footer container">
+    <a href="index.html" class="short-logo-link">
+      <img width="128" height="24" class="short-logo" src="images/logo-text.svg" alt="Текстовый логотип Cat Energy">
+    </a>
+
+    <ul class="footer-socials-list">
+      <li class="footer-socials-item">
+        <a href="" class="footer-social-item-link">
+          <img src="images/vkontakte.svg" alt="логотип вконтакте" class="vk">
+        </a>
+      </li>
+      <li class="footer-socials-item">
+        <a href="" class="footer-social-item-link">
+          <img src="images/youtube.svg" alt="логотип ютуб" class="youtube">
+        </a>
+      </li>
+      <li class="footer-socials-item">
+        <a href="" class="footer-social-item-link">
+          <img src="images/telegram.svg" alt="логотип телеграмм" class="tg">
+        </a>
+      </li>
+    </ul>
+  </footer>
+
+</body>
+
+</html>

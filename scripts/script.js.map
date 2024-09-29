@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["source/scripts/script.js"],
+  "sourcesContent": ["/*\u041A\u041D\u041E\u041F\u041A\u0410 \u041D\u0410\u0412\u0418\u0413\u0410\u0426\u0418\u0418*/\nconst element = document.getElementById('navMenu');\nconst button = document.getElementById('navMenuBtn');\n\nbutton.onclick = function () {\n    if (element.classList.contains('visually-hidden')) {\n        element.classList.remove('visually-hidden'); // \u0423\u0434\u0430\u043B\u044F\u0435\u043C \u043A\u043B\u0430\u0441\u0441\n\n    } else {\n        element.classList.add('visually-hidden'); // \u0412\u043E\u0437\u0432\u0440\u0430\u0449\u0430\u0435\u043C \u043A\u043B\u0430\u0441\u0441\n\n    }\n}\n\n"],
+  "mappings": ";AACA,IAAM,UAAU,SAAS,eAAe,SAAS;AACjD,IAAM,SAAS,SAAS,eAAe,YAAY;AAEnD,OAAO,UAAU,WAAY;AACzB,MAAI,QAAQ,UAAU,SAAS,iBAAiB,GAAG;AAC/C,YAAQ,UAAU,OAAO,iBAAiB;AAAA,EAE9C,OAAO;AACH,YAAQ,UAAU,IAAI,iBAAiB;AAAA,EAE3C;AACJ;",
+  "names": []
+}
