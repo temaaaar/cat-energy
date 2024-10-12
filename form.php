@@ -43,4 +43,9 @@ function orderSendTelegram($message) {
 
 /* Отправляем сообщение в Telegram */
 orderSendTelegram($message);
-?>
+
+/* Всплывающее окно с сообщением об успешной отправке */
+echo "<script>
+        alert('Ваша заявка успешно отправлена!');
+        window.location.href = 'index.html';
+      </script>";
