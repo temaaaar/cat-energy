@@ -18,14 +18,14 @@ document.getElementById('page-form').onsubmit = function (event) {
 
     // Создаем объект FormData для отправки данных
     var formData = new FormData();
-    formData.append('controls-name', name);
-    formData.append('controls-weight', weight);
-    formData.append('controls-old', old);
+    formData.append('name', name);
+    formData.append('weight', weight);
+    formData.append('old', old);
     formData.append('weight-loss', weight_loss);
     formData.append('weight-gain', weight_gain);
     formData.append('advice', advice);
-    formData.append('owner-email', email);
-    formData.append('owner-phone', phone);
+    formData.append('email', email);
+    formData.append('phone', phone);
     formData.append('comment', comment);
     formData.append('sweetener', sweetener);
     formData.append('water', water);
