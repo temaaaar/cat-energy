@@ -1,0 +1,1 @@
+created a small project for the mobile version with a responsive interface, had plans to develop it for tablets and desktops as well, but decided not to spend time on that and move on to more priority technologies in frontend development
